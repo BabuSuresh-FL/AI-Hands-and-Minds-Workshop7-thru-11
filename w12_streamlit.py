@@ -1,4 +1,4 @@
-cat > w11_streamlit.py << 'EOF'
+cat > w12_streamlit.py << 'EOF'
 """
 App - Streamlit UI  
 """
