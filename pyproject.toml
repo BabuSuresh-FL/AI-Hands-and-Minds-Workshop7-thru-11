@@ -1,0 +1,15 @@
+cat > pyproject.toml << 'EOF'
+[project]
+name = "app-apex-auto-insurance"
+version = "0.1.0"
+description = "App - AgentCore Gateway + MCP + Lambda + DynamoDB"
+requires-python = ">=3.12"
+
+dependencies = [
+    "strands-agents>=1.41.0",
+    "strands-agents-tools>=0.7.0",
+    "bedrock-agentcore>=1.12.0",
+    "boto3>=1.43.18",
+    "mcp>=1.0.0",
+]
+EOF
