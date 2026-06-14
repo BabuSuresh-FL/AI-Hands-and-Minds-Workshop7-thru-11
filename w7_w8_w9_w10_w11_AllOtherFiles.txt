@@ -118,6 +118,8 @@ aws iam put-role-policy \
   --policy-document file:///tmp/w8-gateway-lambda-policy.json
 
 
+cd lambdas (create this dir under your App main folder, if its not already present)
+
 # Save Role ARN
 ROLE_ARN=$(aws iam get-role --role-name w8-apex-lambda-role \
   --query 'Role.Arn' --output text)
@@ -127,9 +129,9 @@ echo "Role ARN: $ROLE_ARN"
 
 
  
+
 ###----------- Lambda functions - w9 Begin 
 
-cd lambdas (create this dir under your App main folder, if its not already present)
 sudo apt install zip -y
 
 ROLE_ARN=$(aws iam get-role --role-name w8-apex-lambda-role \
